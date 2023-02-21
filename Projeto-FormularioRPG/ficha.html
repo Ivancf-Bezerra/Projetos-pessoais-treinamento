@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul style="display: inline;"><a href="index.html">Home</a></ul>
-        <ul style="display: inline;"><a href="ficha.html">Ficha</a></ul>
-    </nav>
+    <header>
+        <nav>
+            <ul style="display: inline;"><a href="index.html">Home</a></ul>
+            <ul style="display: inline;"><a href="ficha.html">Ficha</a></ul>
+        </nav>
+    </header>
+
     <main>
         <div id="title">
             <h1>Ficha de RPG</h1>
         </div>
-        <form action="ficha.php">
+        <div id="main">
+            <form action="ficha.php" autocomplete="off" method="post">
             <div id="personagem">
                 <fieldset>
                 <legend>Personagem</legend>
@@ -43,19 +48,34 @@
                         </select>
                 </fieldset>
             </div>
-        <div id="atr">
+            <div id="atributos">
             <fieldset>
                 <legend>Atributos</legend>
-                <ul>
-                    <ol><label for="forca">Forca </label><input type="number" name="forca" id="forca" min="1" max="15"></ol>
-                    <ol>Constituição <input type="number" name="" id="" min="1" max="15"></ol>
-                    <ol>Destreza <input type="number" name="" id="" min="1" max="15"></ol>
-                    <ol>Inteligencia <input type="number" name="" id="" min="1" max="15"></ol>
-                    <ol>Sabedoria <input type="number" name="" id="" min="1" max="15"></ol>
-                    <ol>Carisma <input type="number" name="" id="" min="1" max="15"></ol>
-                </ul>
+                <div>
+                    <p>Pontos restante: <span id="limiterestante">60</span></p>
+                </div>
+                    <div>
+                        <label for="forca">Força</label><input type="number" class="atributo" value="0" name="forca" id="forca" min="1" max="15" onchange="updateLimit()" >
+                    </div>
+
+                    <div>
+                        <label for="constituicao">Constituição</label><input type="number" name="constituicao" id="constituicao" class="atributo" value="0" min="1" max="15" onchange="updateLimit()" >
+                    </div>
+                    <div>
+                        <label for="destreza">Destreza</label><input type="number" class="atributo" value="0" name="destreza" id="destreza" min="1" max="15" onchange="updateLimit()" >
+                    </div>
+                    <div>
+                        <label for="inteligencia">Inteligencia</label><input type="number" name="inteligencia" id="inteligencia" class="atributo" value="0" min="1" max="15" onchange="updateLimit()" >
+                    </div>
+                    <div>
+                        <label for="sabedoria">Sabedoria</label><input type="number" name="sabedoria" id="sabedoria" class="atributo" value="0" min="1" max="15" onchange="updateLimit()" >
+                    </div>
+                    <div>
+                        <label for="carisma">Carisma</label><input type="number" class="atributo" value="0" name="carisma" id="carisma" min="1" max="15" onchange="updateLimit()" >
+                    </div>
+                
             </fieldset>
-        </div>
+            </div>
             <div id="equipamentos">
                 <fieldset>
                     <legend>Equipamentos</legend>
@@ -75,9 +95,9 @@
                     </div>                    
                 </fieldset>
             </div>
-        </form>
+            </form>
         </div>
     </main>
-    
+    <script src="script.js"></script> 
 </body>
 </html>
