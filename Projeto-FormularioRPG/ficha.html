@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+</head>
+<body>
+    <nav>
+        <ul style="display: inline;"><a href="index.html">Home</a></ul>
+        <ul style="display: inline;"><a href="ficha.html">Ficha</a></ul>
+    </nav>
+    <main>
+        <div id="title">
+            <h1>Ficha de RPG</h1>
+        </div>
+        <form action="ficha.php">
+            <div id="personagem">
+                <fieldset>
+                <legend>Personagem</legend>
+                    <label for="txtname">Nome:</label>
+                    <input type="text" name="name" id="txtname">
+                    <label for="txtsecname">Nome do Jogador: </label><input type="text" name="secname" id="txtsecname"></p>
+                    <div>
+                        <label for="idade">Idade:</label><input type="number" name="idade" id="idade" min="1" max="120" step="1">
+                        <label for="raça">Raça: </label>
+                        <select name="raça" id="raça">
+                            <option value="noraca"></option>
+                            <option value="humano">Humano</option>
+                            <option value="elfo">Elfo</option>
+                            <option value="anao">Anão</option>
+                            <option value="halfling">Halfling</option>
+                        </select>
+                        <label for="classes">Classe:</label>
+                        <select name="classes" id="classes">
+                            <option value="noclass"></option>
+                            <option value="guerreiro">Guerreiro</option>
+                            <option value="mago">Mago</option>
+                            <option value="arqueiro">Arqueiro</option>
+                            <option value="clerigo">Clérigo</option>
+                            <option value="ladino">Ladino</option>
+                        </select>
+                </fieldset>
+            </div>
+        <div id="atr">
+            <fieldset>
+                <legend>Atributos</legend>
+                <ul>
+                    <ol><label for="forca">Forca </label><input type="number" name="forca" id="forca" min="1" max="15"></ol>
+                    <ol>Constituição <input type="number" name="" id="" min="1" max="15"></ol>
+                    <ol>Destreza <input type="number" name="" id="" min="1" max="15"></ol>
+                    <ol>Inteligencia <input type="number" name="" id="" min="1" max="15"></ol>
+                    <ol>Sabedoria <input type="number" name="" id="" min="1" max="15"></ol>
+                    <ol>Carisma <input type="number" name="" id="" min="1" max="15"></ol>
+                </ul>
+            </fieldset>
+        </div>
+            <div id="equipamentos">
+                <fieldset>
+                    <legend>Equipamentos</legend>
+                    <div id="armas">
+                        <fieldset>
+                            <legend>Armas</legend>
+                        </fieldset>
+                    </div>
+                    <div id="armaduras">
+                        <fieldset><legend>Armaduras</legend></fieldset>
+                    </div>
+                    <div id="acessorios">
+                        <fieldset><legend>Acessorios</legend></fieldset>
+                    </div>
+                    <div id="itens">
+                        <fieldset><legend>Itens</legend></fieldset>
+                    </div>                    
+                </fieldset>
+            </div>
+        </form>
+        </div>
+    </main>
+    
+</body>
+</html>
