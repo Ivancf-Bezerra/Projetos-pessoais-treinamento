@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FichaRPG</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Home</p>
+            <p>Contato</p>
+        </nav>
+    </header>
+    <main>
+        <section id="apresentacao">
+            <h1>Projeto Formulário Ficha RPG</h1>
+            <p>Esse é um projeto desenvolvido por Ivan Claudio de Faria Bezerra, para treinamento pessoal de HTML5 e CSS3.</p>
+            <p>O intuito foi criar uma ficha para um Role Play Game baseado em D&D de forma resumida.</p>
+            <div id="iniciar">
+                <button>Iniciar</button>
+            </div>
+        </section>
+        <section id="ficha">
+            <form action="ficha.php" method="post">
+                <h1>Ficha</h1>
+                <div id="personagem">
+                    <fieldset><legend>Personagem</legend>
+                        <div>
+                            <label for="nick">Nome do Personagem</label>
+                            <input type="text" name="nick" id="nick">
+                        </div>
+                        <div>
+                            <label for="jogador">Jogador</label>
+                            <input type="text" name="jogador" id="jogador">
+                        </div>
+                        <div>
+                            <label for="nivel">Nivel</label>
+                            <input type="number" name="nivel" id="nivel" min="1" max="120">
+                        </div>
+                        <div id="p-raca">
+                            <fieldset >
+                                <legend>Raça</legend>
+                                <input type="radio" name="raca" id="humano" checked>
+                                    <label for="humano">Humano</label>
+                                <input type="radio" name="raca" id="elfo">
+                                    <label for="elfo">Elfo</label>
+                                <input type="radio" name="raca" id="anao">
+                                    <label for="anao">Anão</label>
+                                <input type="radio" name="raca" id="halfling">
+                                    <label for="halfling">Halfling</label>
+                                <input type="radio" name="raca" id="orc">
+                                    <label for="orc">Orc</label>
+                            </fieldset>
+                        </div>
+                        <div id="p-classe" style="display: inline-block;">
+                            <fieldset>
+                                <legend>Classe</legend>
+                                <div>
+                                    <input type="radio" name="classe" id="guerreiro">
+                                        <label for="guerreiro">Guerreiro</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="classe" id="ladrao">
+                                        <label for="ladrao">Ladrão</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="classe" id="mago">
+                                        <label for="mago">Mago</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="classe" id="arqueiro">
+                                        <label for="arqueiro">Arqueiro</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="classe" id="clerigo">
+                                        <label for="clerigo">Clérigo</label>
+                                </div>
+                            </fieldset>
+                            
+
+                        </div>
+                        <div id="p-atributos" style="display: inline-block;">
+                            <fieldset>
+                                <legend>Atributos</legend>
+                                <div>
+                                    <label for="constituicao">Constituição</label>
+                                    <input type="number" name="atributo" id="constituicao" min="3" max="18">
+                                </div>
+                                <div>
+                                    <label for="forca">Força</label>
+                                    <input type="number" name="atributo" id="forca" min="3" max="18">
+                                </div>
+                                <div>
+                                    <label for="destreza">Destreza</label>
+                                    <input type="number" name="atributo" id="destreza" min="3" max="18">
+                                </div>
+                                <div>
+                                    <label for="inteligencia">Inteligência</label>
+                                    <input type="number" name="atributo" id="inteligencia" min="3" max="18">
+                                </div>
+                                <div>
+                                    <label for="sabedoria">Sabedoria</label>
+                                    <input type="number" name="atributo" id="sabedoria" min="3" max="18">
+                                </div>
+                                <div>
+                                    <label for="carisma">Carisma</label>
+                                    <input type="number" name="atributo" id="carisma" min="3" max="18">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div id="p-equipamentos">
+                            <fieldset>
+                                <legend>Historia</legend>
+                                <textarea name="historia" id="historia" cols="50" rows="10" placeholder="Escreva um resumo da historia do seu persongaem,caracteristicas e comportamento."></textarea>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
