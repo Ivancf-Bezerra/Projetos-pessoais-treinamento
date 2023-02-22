@@ -21,10 +21,22 @@ body{
 }
 
 main{
-    display: block;
-    width:450px;
+    width: 600px;
     margin: auto;
 }
+
+#personagem {
+    margin: auto;
+}
+
+#p-raca{
+    display: flex;
+    margin: auto;
+    justify-content:space-between ;
+}
+
+
+
 
 
 
