@@ -55,15 +55,15 @@
                                     <label for="orc">Orc</label>
                             </fieldset>
                         </div>
-                        <div id="p-classe" style="display: inline-block;">
+                        <div id="p-classe">
                             <fieldset>
                                 <legend>Classe</legend>
                                 <div>
-                                    <input type="radio" name="classe" id="guerreiro">
+                                    <input type="radio" name="classe" id="guerreiro" onchange="fclasse()" >
                                         <label for="guerreiro">Guerreiro</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="classe" id="ladrao">
+                                    <input type="radio" name="classe" id="ladrao" onchange="fclasse()">
                                         <label for="ladrao">Ladrão</label>
                                 </div>
                                 <div>
@@ -82,7 +82,7 @@
                             
 
                         </div>
-                        <div id="p-atributos" style="display: inline-block;">
+                        <div id="p-atributos">
                             <fieldset>
                                 <legend>Atributos</legend>
                                 <div>
@@ -111,10 +111,51 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <div id="p-equipamentos">
+                        <div id="p-historia">
                             <fieldset>
                                 <legend>Historia</legend>
-                                <textarea name="historia" id="historia" cols="50" rows="10" placeholder="Escreva um resumo da historia do seu persongaem,caracteristicas e comportamento."></textarea>
+                                <textarea name="historia" id="historia" placeholder="Escreva um resumo da historia do seu persongaem,caracteristicas e comportamento."></textarea>
+                            </fieldset>
+                        </div>
+                        <div id="equipamentos">
+                            <h2>Equipamentos</h2>
+                            <fieldset>
+                                <legend>Armas</legend>
+                                <div class="armas-classes" id="armas-guerreiro">
+                                    <input type="checkbox" name="espada-escudo" id="espada-escudo">Espada/Escudo
+                                    <input type="checkbox" name="espadalonga" id="espadalonga">Espada Longa
+                                    <input type="checkbox" name="machadao" id="machadao">Machadão
+                                    <input type="checkbox" name="martelo-de-guerra" id="martelo-de-guerra">Martelo de Guerra
+                                    <input type="checkbox" name="arcolongo" id="arcolongo">Arco Longo
+                                </div>
+                                <div class="armas-classes" id="armas-ladrao">
+                                    <input type="checkbox" name="" id="">Adagas Duplas
+                                    <input type="checkbox" name="" id="">Espada Curta
+                                    <input type="checkbox" name="" id="">Espada
+                                    <input type="checkbox" name="" id="">Besta Pequena
+                                    <input type="checkbox" name="" id="">Arco
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Armaduras</legend>
+                                <div>
+
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Acessórios</legend>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
                             </fieldset>
                         </div>
                     </fieldset>

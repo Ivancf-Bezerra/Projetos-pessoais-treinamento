@@ -6,56 +6,31 @@
 }
 header{
     background-color: black;
-    margin-bottom: 5px;
     color: white;
-    width: 100vw;
-    margin-bottom: 20px;
 }
-nav p{
-    display: inline-block;
-    padding: 10px 10px;
-    font-size: 1.5rem;
-}
-nav p:hover{
-    background-color: grey;
-    border-radius: 5px;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-    background-color: grey;
-}
-main{
-    width: 500px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.347);
-    border-radius: 10px;
-    padding: 20px;
-}
-h1 {
+h1,h2 {
     text-align: center;
-    padding-bottom: 10px;
+}
+legend {
+    font-size: .8rem;
 }
 
-h1 p {
-    text-align: justify;
+body{
+ width: 100vw;
+ height: 100vh;
 }
-#iniciar {
-text-align: center;
-}
-button{
-    align-items: center;
-    width: 300px;
-    height: 30px;
-    margin: 10px;
+
+main{
+    display: block;
+    width:450px;
+    margin: auto;
 }
 
 
-div {
-    margin: 5px;
+
+#armas-guerreiro,
+#armas-ladrao{
+    display: none;
 }
 
-#ficha {
-    display:none;
 
-}
