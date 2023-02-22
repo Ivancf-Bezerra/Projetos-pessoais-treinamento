@@ -1,17 +1,21 @@
 fieldset {
     border-radius: 5px;
-    border-color:rgb(36, 205, 90);
+    border-color:rgb(19, 135, 104);
 }
 div{
-    padding: 5px;
+    padding: 2px;
 }
 input, select{
     border-radius: 2px;
 }
 
-body {
+body main { 
+    display: block;
+    position: relative;
     text-align: left;
     background-color: rgba(47, 255, 68, 0.132);
+    width: 600px;
+    margin:auto;
 }
 div#atributos label{
     width: 100px;
@@ -22,5 +26,11 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px black;
-    background-color: rgb(56, 205, 36);
+    background-color: rgba(81, 133, 74, 0.573);
+}
+#historia {
+    display: block;
+    width: 500px;
+    margin: 10px auto;
+    border-radius: 5px;
 }
