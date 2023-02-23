@@ -3,41 +3,98 @@
 *{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 header{
     background-color: black;
     color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+nav p {
+    display: inline;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+}
+#iniciar{
+    text-align: center;
+}
+
+button {
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(55, 11, 97);
+    color: white;
+    border: 0px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgb(94, 16, 168);
+}
+
+nav p:hover{
+    background-color: rgba(94,16,168);
 }
 h1,h2 {
     text-align: center;
-}
-legend {
-    font-size: .8rem;
+    padding: 10px 5px;
+    margin: 10px 5px;
 }
 
+legend {
+    font-size: .8em;
+    border-radius: 2px;
+    background-color: rgba(190, 190, 190, 0.534);
+}
+fieldset{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.448);
+    margin-bottom: 5px;
+}
+
+
 body{
- width: 100vw;
- height: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+input{
+    margin: .2em;
 }
 
 main{
-    width: 600px;
-    margin: auto;
-}
-
-#personagem {
-    margin: auto;
-}
-
-#p-raca{
     display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 450px;
     margin: auto;
-    justify-content:space-between ;
+}
+#p-raca {
+    display:inline-block;
+}
+#p-classe{
+    display:inline-block;
+    position: relative;
+
 }
 
+#p-atributos{
+    display: inline-block;
+}
 
+textarea{
+    display:inline-block;
+    width: 435px!important;
 
-
+}
 
 
 #armas-guerreiro,
