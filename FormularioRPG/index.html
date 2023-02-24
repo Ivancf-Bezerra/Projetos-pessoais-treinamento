@@ -20,120 +20,130 @@
             <p>Esse é um projeto desenvolvido por Ivan Claudio de Faria Bezerra, para treinamento pessoal de HTML5 e CSS3.</p>
             <p>O intuito foi criar uma ficha para um Role Play Game baseado em D&D de forma resumida.</p>
             <div id="iniciar">
-                <button id="btn" onclick="finiciar()">Iniciar</button>
+                <button id="btn">Iniciar</button>
             </div>
         </section>
         <section id="ficha">
             <form action="ficha.php" method="post">
                 <h1>Ficha</h1>
                 <div id="personagem">
-                    <fieldset><legend>Personagem</legend>
-                        <div>
-                            <label for="nick">Nome do Personagem</label>
-                            <input type="text" name="nick" id="nick">
-                        </div>
-                        <div>
-                            <label for="jogador">Jogador</label>
-                            <input type="text" name="jogador" id="jogador">
-                        </div>
-                        <div>
-                            <label for="nivel">Nivel</label>
-                            <input type="number" name="nivel" id="nivel" min="1" max="120">
-                        </div>
-                        <div id="p-raca">
-                            <fieldset >
-                                <legend>Raça</legend>
-                                <input type="radio" name="raca" id="humano" checked>
-                                    <label for="humano">Humano</label>
-                                <input type="radio" name="raca" id="elfo">
-                                    <label for="elfo">Elfo</label>
-                                <input type="radio" name="raca" id="anao">
-                                    <label for="anao">Anão</label>
-                                <input type="radio" name="raca" id="halfling">
-                                    <label for="halfling">Halfling</label>
-                                <input type="radio" name="raca" id="orc">
-                                    <label for="orc">Orc</label>
-                            </fieldset>
-                        </div>
-                        <div id="p-classe">
-                            <fieldset>
-                                <legend>Classe</legend>
-                                <div>
-                                    <input type="radio" name="classe" id="guerreiro" onchange="fclasse()">
-                                        <label for="guerreiro">Guerreiro</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="classe" id="ladrao" onchange="fclasse()">
-                                        <label for="ladrao">Ladrão</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="classe" id="mago">
-                                        <label for="mago">Mago</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="classe" id="arqueiro">
-                                        <label for="arqueiro">Arqueiro</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="classe" id="clerigo">
-                                        <label for="clerigo">Clérigo</label>
-                                </div>
-                            </fieldset>
-                            
 
-                        </div>
-                        <div id="p-atributos">
+                    <fieldset><legend>Personagem</legend>
+                        <div id="p-inicio">
                             <fieldset>
-                                <legend>Atributos</legend>
-                                <div>
-                                    <label for="constituicao">Constituição</label>
-                                    <input type="number" name="atributo" id="constituicao" min="3" max="18">
+                                <div class="atr">
+                                    <label for="nick">Nome do Personagem</label>
+                                    <input type="text" name="nick" id="nick">
                                 </div>
-                                <div>
-                                    <label for="forca">Força</label>
-                                    <input type="number" name="atributo" id="forca" min="3" max="18">
+                                <div class="atr">
+                                    <label for="jogador">Jogador</label>
+                                    <input type="text" name="jogador" id="jogador">
                                 </div>
-                                <div>
-                                    <label for="destreza">Destreza</label>
-                                    <input type="number" name="atributo" id="destreza" min="3" max="18">
-                                </div>
-                                <div>
-                                    <label for="inteligencia">Inteligência</label>
-                                    <input type="number" name="atributo" id="inteligencia" min="3" max="18">
-                                </div>
-                                <div>
-                                    <label for="sabedoria">Sabedoria</label>
-                                    <input type="number" name="atributo" id="sabedoria" min="3" max="18">
-                                </div>
-                                <div>
-                                    <label for="carisma">Carisma</label>
-                                    <input type="number" name="atributo" id="carisma" min="3" max="18">
+                                <div class="atr">
+                                    <label for="nivel">Nivel</label>
+                                    <input type="number" name="nivel" id="nivel" min="1" max="120">
                                 </div>
                             </fieldset>
                         </div>
-                        <div id="p-historia">
-                            <fieldset>
-                                <legend>Historia</legend>
-                                <textarea name="historia" id="historia" placeholder="Escreva um resumo da historia do seu persongaem,caracteristicas e comportamento."></textarea>
-                            </fieldset>
+                        <div id="raca-classe">
+                            <div id="p-raca">
+                                <fieldset >
+                                    <legend>Raça</legend>
+                                    <input type="radio" name="raca" id="humano" checked>
+                                        <label for="humano">Humano</label> <br>
+                                    <input type="radio" name="raca" id="elfo">
+                                        <label for="elfo">Elfo</label> <br>
+                                    <input type="radio" name="raca" id="anao">
+                                        <label for="anao">Anão</label> <br>
+                                    <input type="radio" name="raca" id="halfling">
+                                        <label for="halfling">Halfling</label> <br>
+                                    <input type="radio" name="raca" id="orc">
+                                        <label for="orc">Orc</label> <br>
+                                </fieldset>
+                            </div>
+                            <div id="p-classe">
+                                <fieldset>
+                                    <legend>Classe</legend>
+                                    <div>
+                                        <input type="radio" name="classe" id="guerreiro" onchange="">
+                                            <label for="guerreiro">Guerreiro</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="classe" id="ladrao" onchange="">
+                                            <label for="ladrao">Ladrão</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="classe" id="mago">
+                                            <label for="mago">Mago</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="classe" id="arqueiro">
+                                            <label for="arqueiro">Arqueiro</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="classe" id="clerigo">
+                                            <label for="clerigo">Clérigo</label>
+                                    </div>
+                                </fieldset>
+                                
+    
+                            </div>
+
+                            
+                            <div id="p-atributos">
+                                <fieldset>
+                                    <legend>Atributos</legend>
+                                    <div class="atr">
+                                        <label for="constituicao">Constituição</label>
+                                        <input type="number" name="atributo" id="constituicao" min="3" max="18">
+                                    </div>
+                                    <div class="atr">
+                                        <label for="forca">Força</label>
+                                        <input type="number" name="atributo" id="forca" min="3" max="18">
+                                    </div>
+                                    <div class="atr">
+                                        <label for="destreza">Destreza</label>
+                                        <input type="number" name="atributo" id="destreza" min="3" max="18">
+                                    </div>
+                                    <div class="atr">
+                                        <label for="inteligencia">Inteligência</label>
+                                        <input type="number" name="atributo" id="inteligencia" min="3" max="18">
+                                    </div>
+                                    <div class="atr">
+                                        <label for="sabedoria">Sabedoria</label>
+                                        <input type="number" name="atributo" id="sabedoria" min="3" max="18">
+                                    </div>
+                                    <div class="atr">
+                                        <label for="carisma">Carisma</label>
+                                        <input type="number" name="atributo" id="carisma" min="3" max="18">
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div id="p-historia">
+                                <fieldset>
+                                    <legend>Historia</legend>
+                                    <textarea name="historia" id="historia" placeholder="Escreva um resumo da historia do seu persongaem,caracteristicas e comportamento."></textarea>
+                                </fieldset>
+                            </div>
+
                         </div>
                         <div id="equipamentos">
                             <h2>Equipamentos</h2>
                             <fieldset>
                                 <legend>Armas</legend>
-                                <div class="armas-classes" id="armas-guerreiro">
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="armas" id="espada-escudo">Espada/Escudo
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="espadalonga" id="espadalonga">Espada Longa
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="machadao" id="machadao">Machadão
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="martelo-de-guerra" id="martelo-de-guerra">Martelo de Guerra
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="arcolongo" id="arcolongo">Arco Longo
+                                <div>
+                                    <input type="checkbox" name="" id="espada-escudo">Espada/Escudo
+                                    <input type="checkbox" name="" id="espadalonga">Espada Longa
+                                    <input type="checkbox" name="" id="machadao">Machadão
+                                    <input type="checkbox" name="" id="martelo-de-guerra">Martelo de Guerra
+                                    <input type="checkbox" name="" id="arcolongo">Arco Longo
                                 </div>
-                                <div class="armas-classes" id="armas-ladrao">
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="armas" id="">Adagas Duplas
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="" id="">Espada Curta
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="" id="">Espada
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="" id="">Besta Pequena
-                                    <input type="checkbox" onchange="verificarQuantidadeDeArmas()" name="" id="">Arco
+                                <div>
+                                    <input type="checkbox" name="" id="">Adagas Duplas
+                                    <input type="checkbox" name="" id="">Espada Curta
+                                    <input type="checkbox" name="" id="">Espada
+                                    <input type="checkbox" name="" id="">Besta Pequena
+                                    <input type="checkbox" name="" id="">Arco
                                 </div>
                                 <div></div>
                                 <div></div>
@@ -158,12 +168,12 @@
                                 <div></div>
                             </fieldset>
                         </div>
+
                     </fieldset>
                 </div>
             </form>
 
         </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
